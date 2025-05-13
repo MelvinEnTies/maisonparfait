@@ -4,8 +4,9 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
-.cat1 {
+.cat1 { 
     margin: 0;
     padding: 0px;
     font-size: 3.5vw;
