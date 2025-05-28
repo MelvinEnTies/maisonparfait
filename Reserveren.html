@@ -14,13 +14,38 @@
             function maandkeuze(maand) {
                 document.getElementById("maandbtn").innerHTML = maand;
             }
+            function dagkeuze2(dag) {
+                document.getElementById("dagbtn2").innerHTML = dag;
+            }
             
+            function tijdkeuze2(tijd) {
+                document.getElementById("tijdbtn2").innerHTML = tijd;
+            }
             
+            function maandkeuze2(maand) {
+                document.getElementById("maandbtn2").innerHTML = maand;
+            }
+            
+            function resultaat() {
+                var dag1 = document.getElementById("dagbtn").innerHTML;
+                var maand1 = document.getElementById("maandbtn").innerHTML;
+                var tijd1 = document.getElementById("tijdbtn").innerHTML;
+                alert("je hebt op " + dag1 +" "+ maand1 + " om " + tijd1 + " gereserveerd voor de grote baan");
+            }
+            function resultaat2() {
+                var dag2 = document.getElementById("dagbtn2").innerHTML;
+                var maand2 = document.getElementById("maandbtn2").innerHTML;
+                var tijd2 = document.getElementById("tijdbtn2").innerHTML;
+                alert("je hebt op " + dag2 +" "+ maand2 + " om " + tijd2 + " gereserveerd voor de kleine baan");
+            }
         </script>
+
     </head>
     <body>
         <h1><a href="index.html" style="cursor: pointer;">Maison Parfait</a></h1>
         <hr style="width: 85%;">
+
+
         <nav>
             <ul>
                 <li><a class="Balk" href="Winkel.html">Winkel</a></li>
@@ -29,6 +54,8 @@
                 <li><a class="Balk" href="OverOns.html">About us</a></li>
             </ul>
         </nav>
+    <!--Knoppenrij 1-->
+        <p>Reserveren voor de grote baan:</p>
         <div class="dropdown">
             <button id="tijdbtn" class="dropbtn">Tijdsslot</button>
             <div class="dropdown-content">
@@ -91,6 +118,76 @@
                 <a href="#" onclick="maandkeuze('December')">December</a>
             </div>
         </div>
-        <button class="normbtn">Ok</button>
+        <button class="normbtn" onclick="resultaat()">Ok</button>
+        <br><br><br><br>
+        <p>Reserveren voor de kleine baan:</p>
+<!--Knoppenrij 2-->
+        <div class="dropdown">
+            <button id="tijdbtn2" class="dropbtn">Tijdsslot</button>
+            <div class="dropdown-content">
+                <a href="#" onclick="tijdkeuze2('9:00-10:00')">9:00-11:00</a>
+                <a href="#" onclick="tijdkeuze2('10:00-11:00')">11:00-13:00</a>
+                <a href="#" onclick="tijdkeuze2('11:00-12:00')">13:00-15:00</a>
+                <a href="#" onclick="tijdkeuze2('12:00-13:00')">15:00-17:00</a>
+                <a href="#" onclick="tijdkeuze2('13:00-14:00')">9:00-11:00</a>
+                <a href="#" onclick="tijdkeuze2('14:00-15:00')">11:00-13:00</a>
+                <a href="#" onclick="tijdkeuze2('15:00-16:00')">13:00-15:00</a>
+                <a href="#" onclick="tijdkeuze2('16:00-17:00')">15:00-17:00</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button id="dagbtn2" class="dropbtn">Dag</button>
+            <div class="dropdown-content2">
+                <a href="#" onclick="dagkeuze2('01')">01</a>
+                <a href="#" onclick="dagkeuze2('02')">02</a>
+                <a href="#" onclick="dagkeuze2('03')">03</a>
+                <a href="#" onclick="dagkeuze2('04')">04</a>
+                <a href="#" onclick="dagkeuze2('05')">05</a>
+                <a href="#" onclick="dagkeuze2('06')">06</a>
+                <a href="#" onclick="dagkeuze2('07')">07</a>
+                <a href="#" onclick="dagkeuze2('08')">08</a>
+                <a href="#" onclick="dagkeuze2('09')">09</a>
+                <a href="#" onclick="dagkeuze2('10')">10</a>
+                <a href="#" onclick="dagkeuze2('11')">11</a>
+                <a href="#" onclick="dagkeuze2('12')">12</a>
+                <a href="#" onclick="dagkeuze2('13')">13</a>
+                <a href="#" onclick="dagkeuze2('14')">14</a>
+                <a href="#" onclick="dagkeuze2('15')">15</a>
+                <a href="#" onclick="dagkeuze2('16')">16</a>
+                <a href="#" onclick="dagkeuze2('17')">17</a>
+                <a href="#" onclick="dagkeuze2('18')">18</a>
+                <a href="#" onclick="dagkeuze2('19')">19</a>
+                <a href="#" onclick="dagkeuze2('20')">20</a>
+                <a href="#" onclick="dagkeuze2('21')">21</a>
+                <a href="#" onclick="dagkeuze2('22')">22</a>
+                <a href="#" onclick="dagkeuze2('23')">23</a>
+                <a href="#" onclick="dagkeuze2('24')">24</a>
+                <a href="#" onclick="dagkeuze2('25')">25</a>
+                <a href="#" onclick="dagkeuze2('26')">26</a>
+                <a href="#" onclick="dagkeuze2('27')">27</a>
+                <a href="#" onclick="dagkeuze2('28')">28</a>
+                <a href="#" onclick="dagkeuze2('29')">29</a>
+                <a href="#" onclick="dagkeuze2('30')">30</a>
+                <a href="#" onclick="dagkeuze2('31')">31</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button id="maandbtn2" class="dropbtn">Maand</button>
+            <div class="dropdown-content">
+                <a href="#" onclick="maandkeuze2('Januari')">Januari</a>
+                <a href="#" onclick="maandkeuze2('Februai')">Februari</a>
+                <a href="#" onclick="maandkeuze2('Maart')">Maart</a>
+                <a href="#" onclick="maandkeuze2('April')">April</a>
+                <a href="#" onclick="maandkeuze2('Mei')">Mei</a>
+                <a href="#" onclick="maandkeuze2('Juni')">Juni</a>
+                <a href="#" onclick="maandkeuze2('Juli')">Juli</a>
+                <a href="#" onclick="maandkeuze2('Augustus')">Augustus</a>
+                <a href="#" onclick="maandkeuze2('September')">September</a>
+                <a href="#" onclick="maandkeuze2('October')">October</a>
+                <a href="#" onclick="maandkeuze2('November')">November</a>
+                <a href="#" onclick="maandkeuze2('December')">December</a>
+            </div>
+        </div>
+        <button class="normbtn" onclick="resultaat2()">Ok</button>
     </body>
 </html>
