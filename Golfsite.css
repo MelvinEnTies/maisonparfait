@@ -1,3 +1,4 @@
+/*Zo ziet de body er standaard uit*/
 body {
     background-color: #fcf9f0;
     color: #0a3a82;
@@ -6,18 +7,13 @@ body {
     text-align: center;
     font-family: "Plus Jakarta Sans", sans-serif;
 }
-.cat1 { 
-    margin: 0;
-    padding: 0px;
-    font-size: 3.5vw;
-    cursor: pointer;
-}
+/*Navigatiebalk*/
 .Balk {
     margin: 0;
     font-size: 3.5vw;
     cursor: pointer;
 }
-/*Balk*/
+/*Navigatiebalk*/
 ul {
     list-style-type: none;
     padding: 0%;
@@ -28,6 +24,7 @@ ul {
     margin-right: 2vw;
     border-radius: 2vw;
 }
+/*Niet geselecteerde of actieve pagina*/
 li a {
     display: block;
     padding-left: 3vw;
@@ -35,17 +32,18 @@ li a {
     text-decoration: none;
     color: lightblue;
 }
+/*Pagina waar overheen gegaan wordt met de muis*/
 li a:hover {
     background-color: lightblue;
     color: #243e5c;
 }
+/*Pagina waar je je nu bevind*/
 .active {
     color: gray;
     margin: 0;
     font-size: 3.5vw;
     cursor: pointer;
 }
-/*balk*/
 
 /*Dropdown btn*/
 .dropbtn {
@@ -56,6 +54,7 @@ li a:hover {
   border: none;
 }
 
+/*Opties voor de knop op hover knop*/
 .normbtn {
   background-color: gray;
   color: white;
@@ -64,13 +63,13 @@ li a:hover {
   border: none;
 }
 
-/* The container <div> - needed to position the dropdown content */
+
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
+/*Zorgt ervoor dat de opties standaard verborgen zijn*/
 .dropdown-content {
   display: none;
   position: absolute;
@@ -80,6 +79,7 @@ li a:hover {
   z-index: 1;
 }
 
+/*Laat de opties mooier eruitzien*/
 .dropdown-content2 {
   display: none;
   position: absolute;
@@ -89,7 +89,7 @@ li a:hover {
   z-index: 1;
 }
 
-/* Links inside the dropdown */
+/*Standaard vorm opties*/
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -103,25 +103,25 @@ li a:hover {
   display: block;
 }
 
-/* Change color of dropdown links on hover */
+/*Opties krijgen andere kleur op hover*/
 .dropdown-content a:hover {background-color: #ddd;}
 .dropdown-content2 a:hover {background-color: #ddd;}
 
-/* Change color of normbtn*/
+/*Kleur ok knop veranderd op hover*/
 .normbtn:hover {background-color: #606060;}
 
-/* Show the dropdown menu on hover */
+/*Laat de opties zien op hover*/
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropdown-content2 {display: block;}
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
+/*Veranderd kleur van de knoppen op hover*/
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 /*Dropdown btn*/
 
 
 
 
-/*box winkel*/
+/*box winkel en index*/
 .flexrow {
   display: flex;
   justify-content: space-around;
