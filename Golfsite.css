@@ -121,7 +121,7 @@ li a:hover {
 
 
 
-/*box winkel en index*/
+/*box winkel en index en about us*/
 .flexrow {
   display: flex;
   justify-content: space-around;
@@ -135,7 +135,7 @@ li a:hover {
 }
 
 
-/*margin toevoegen*/
+/*foto winkel formaat*/
 .box img {
   width: 100%;
 }
